@@ -28,3 +28,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# data files — contain customer PII (names, phones, addresses, orders)
+# NEVER commit these to version control
+data/orders.json
+data/leads.json

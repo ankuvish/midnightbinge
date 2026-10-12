@@ -504,6 +504,14 @@ All notable changes to this project are documented here.
 
 ---
 
+## 🔒 Security
+
+Security controls, the pre-deploy checklist, known limitations, and the vulnerability disclosure process are documented separately:
+
+**➜ [SECURITY.md](./SECURITY.md)**
+
+---
+
 ## 📜 License
 
 Private project — all rights reserved.

@@ -20,8 +20,10 @@ export default function Root({ children }: { children: React.ReactNode }) {
     <html lang="en" className={`${display.variable} ${body.variable} ${script.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light')}catch(e){}})()` }} />
-        {/* Microsoft Clarity — replace YOUR_CLARITY_ID with your project ID from clarity.microsoft.com */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","YOUR_CLARITY_ID");` }} />
+        {/* Microsoft Clarity — set NEXT_PUBLIC_CLARITY_ID in your .env.local to enable */}
+        {process.env.NEXT_PUBLIC_CLARITY_ID && (
+          <script dangerouslySetInnerHTML={{ __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","${process.env.NEXT_PUBLIC_CLARITY_ID}");` }} />
+        )}
       </head>
       <body className="font-body min-h-screen">
 

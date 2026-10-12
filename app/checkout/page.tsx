@@ -26,6 +26,17 @@ export default function Checkout() {
   async function pay(e: React.FormEvent) {
     e.preventDefault();
     setErr("");
+
+    // Client-side validation before hitting the API
+    if (!/^[6-9]\d{9}$/.test(f.phone.trim())) {
+      setErr("Enter a valid 10-digit Indian mobile number.");
+      return;
+    }
+    if (!/^\d{6}$/.test(f.pincode.trim())) {
+      setErr("Enter a valid 6-digit pincode.");
+      return;
+    }
+
     setBusy(true);
     try {
       const r = await fetch("/api/orders", {
