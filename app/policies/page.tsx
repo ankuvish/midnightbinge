@@ -36,7 +36,7 @@ const policies = [
       "All products are manufactured in FSSAI-certified facilities",
       "Batch tested before dispatch",
       "Best-before date clearly printed on every pack",
-      "If you're not happy, we'll make it right — no questions asked",
+      "If you&apos;re not happy, we&apos;ll make it right — no questions asked",
     ],
   },
   {
@@ -58,7 +58,7 @@ export default function Policies() {
         <p className="text-xs font-bold tracking-widest text-ember uppercase mb-2">Transparency</p>
         <h1 className="font-display text-5xl font-extrabold text-gold-gradient mb-4">Our Policies</h1>
         <p className="text-mist/60 max-w-lg mx-auto leading-relaxed">
-          We believe in being upfront. Here's everything you need to know about how we operate.
+          We believe in being upfront. Here&apos;s everything you need to know about how we operate.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">

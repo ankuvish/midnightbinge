@@ -16,7 +16,7 @@ export default function Contact() {
         <p className="text-xs font-bold tracking-widest text-ember uppercase mb-2">Get in touch</p>
         <h1 className="font-display text-5xl font-extrabold text-gold-gradient mb-4">Contact Us</h1>
         <p className="text-mist/60 leading-relaxed mb-12">
-          We're a small team that genuinely cares. Whether it's a missing order, a flavour suggestion or just a midnight thought — we read every message.
+          We&apos;re a small team that genuinely cares. Whether it&apos;s a missing order, a flavour suggestion or just a midnight thought — we read every message.
         </p>
       </div>
 
@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="fade-up glass rounded-2xl p-10 text-center">
           <p className="text-5xl mb-4">🌙</p>
           <h2 className="font-display text-2xl font-bold text-gold-gradient mb-2">Message received!</h2>
-          <p className="text-mist/60">We'll get back to you within 24 hours. Go grab a snack while you wait.</p>
+          <p className="text-mist/60">We&apos;ll get back to you within 24 hours. Go grab a snack while you wait.</p>
         </div>
       ) : (
         <form onSubmit={submit} className="fade-up glass rounded-2xl p-8 space-y-5">
@@ -43,7 +43,7 @@ export default function Contact() {
           <label className="block">
             <span className="text-xs font-semibold text-mist/50 uppercase tracking-wider">Subject</span>
             <input required value={f.subject} onChange={e => setF({...f, subject: e.target.value})}
-              className="input-luxury mt-1.5" placeholder="What's on your mind?" />
+              className="input-luxury mt-1.5" placeholder="What&apos;s on your mind?" />
           </label>
           <label className="block">
             <span className="text-xs font-semibold text-mist/50 uppercase tracking-wider">Message</span>

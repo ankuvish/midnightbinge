@@ -23,7 +23,7 @@ export default function Careers() {
         <p className="text-xs font-bold tracking-widest text-ember uppercase mb-2">Join us</p>
         <h1 className="font-display text-5xl font-extrabold text-gold-gradient mb-4">Careers</h1>
         <p className="text-mist/60 max-w-lg mx-auto leading-relaxed">
-          We're a small, hungry team building something people genuinely love. If that sounds like your kind of place, read on.
+          We&apos;re a small, hungry team building something people genuinely love. If that sounds like your kind of place, read on.
         </p>
       </div>
 
@@ -59,8 +59,8 @@ export default function Careers() {
 
       <div className="mt-14 fade-up glass rounded-2xl p-8 text-center">
         <p className="text-3xl mb-3">💌</p>
-        <h3 className="font-display font-bold text-xl text-moon mb-2">Don't see your role?</h3>
-        <p className="text-mist/60 text-sm mb-5">Send us your CV and tell us why you'd be a great fit. We're always open to exceptional people.</p>
+        <h3 className="font-display font-bold text-xl text-moon mb-2">Don&apos;t see your role?</h3>
+        <p className="text-mist/60 text-sm mb-5">Send us your CV and tell us why you&apos;d be a great fit. We&apos;re always open to exceptional people.</p>
         <Link href="/contact" className="btn-luxury inline-block rounded-full bg-ember px-8 py-3 font-bold text-white glow-ember">
           Get in touch →
         </Link>

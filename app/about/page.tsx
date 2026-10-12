@@ -44,7 +44,7 @@ export default function About() {
       <div className="fade-up text-center my-20 px-4">
         <p className="font-script leading-tight text-moon"
           style={{ fontSize: "clamp(2rem, 5vw, 4rem)", filter: "drop-shadow(0 0 20px rgba(232,201,122,.25))" }}>
-          "Every bite tells you — just one more."
+          &ldquo;Every bite tells you — just one more.&rdquo;
         </p>
         <p className="text-xs font-bold tracking-widest text-mist/30 uppercase mt-4">— The MidnightBinge promise</p>
       </div>

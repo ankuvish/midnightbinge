@@ -141,7 +141,7 @@ export default function Auth() {
             </button>
 
             <p className="text-center text-xs text-mist/40">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <button type="button" onClick={() => setTab("signup")} className="text-moon hover:underline font-semibold">
                 Sign up
               </button>
