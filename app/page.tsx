@@ -15,21 +15,23 @@ export default function Home() {
     <main>
       {/* Hero */}
       <section className="relative mx-auto max-w-6xl px-4 pt-24 pb-20 grid md:grid-cols-2 gap-12 items-center overflow-hidden">
+        {/* Animated mesh layer */}
+        <div className="hero-mesh rounded-3xl" />
         <div className="pointer-events-none absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-moon/10 blur-[120px]" />
 
         <div className="fade-up">
-          <span className="inline-block text-xs font-bold tracking-widest text-ember uppercase mb-4 border border-ember/30 rounded-full px-3 py-1">Late-night snacking, elevated</span>
-          <h1 className="font-display text-5xl md:text-7xl font-extrabold leading-[0.93] text-gold-gradient">
+          <span className="section-eyebrow mb-4 border border-ember/30 rounded-full px-3 py-1">Late-night snacking, elevated</span>
+          <h1 className="font-display text-5xl md:text-7xl font-extrabold leading-[0.93] text-gold-gradient mt-4 hero-heading">
             Snacks for the hours after midnight.
           </h1>
           <p className="mt-6 text-lg text-mist/70 max-w-md leading-relaxed">
             Light, crunchy and made to be finished in one sitting. Order now and pick a delivery slot that suits your night.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/shop" className="btn-luxury inline-block rounded-full bg-ember px-8 py-3.5 font-bold text-white glow-ember shadow-lg">
+            <Link href="/shop" className="btn-luxury btn-primary inline-block rounded-full px-8 py-3.5 glow-ember shadow-lg">
               Shop the range
             </Link>
-            <Link href="/shop" className="inline-block rounded-full border border-moon/30 px-8 py-3.5 font-bold text-moon hover:bg-moon/10 transition-colors">
+            <Link href="/shop" className="btn-luxury btn-outline-gold inline-block rounded-full px-8 py-3.5 font-bold transition-colors">
               See all flavours
             </Link>
           </div>

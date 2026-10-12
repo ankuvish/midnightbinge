@@ -37,9 +37,9 @@ export default function ProductCard({ p }: { p: Product }) {
   }
 
   return (
-    <div className="group flex flex-col">
-      <Link href={`/product/${p.slug}`} className="relative block overflow-hidden rounded-2xl">
-        <div className="transition-transform duration-500 ease-out group-hover:scale-105">
+    <div className="product-card group flex flex-col">
+      <Link href={`/product/${p.slug}`} className="product-card-image block">
+        <div className="product-card-image-inner">
           <Pack name={p.name} color={p.color} weight={p.weight} />
         </div>
         {discount > 0 && (
@@ -66,10 +66,8 @@ export default function ProductCard({ p }: { p: Product }) {
 
       <button
         onClick={handleAdd}
-        className={`btn-luxury mt-4 w-full rounded-full py-2.5 font-bold text-sm transition-all duration-300 ${
-          added
-            ? "bg-green-500/20 text-green-300 border border-green-500/40"
-            : "bg-moon text-ink hover:bg-white"
+        className={`btn-luxury btn-add mt-4 w-full rounded-full py-2.5 font-bold text-sm ${
+          added ? "btn-add-done" : "btn-add-idle"
         }`}
       >
         {added ? "✓ Added" : "Add to cart"}

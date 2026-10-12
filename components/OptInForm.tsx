@@ -123,7 +123,7 @@ export default function OptInForm() {
               </label>
 
               {status === "error" && (
-                <p className="text-xs text-red-400">{msg}</p>
+                <p className="alert-error">{msg}</p>
               )}
 
               <button

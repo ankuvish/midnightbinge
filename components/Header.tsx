@@ -56,7 +56,7 @@ export default function Header() {
               </svg>
               Cart
               {count > 0 && (
-                <span className="absolute -top-1.5 -right-1.5 size-5 rounded-full bg-ember text-white text-[10px] font-bold grid place-items-center shadow-lg">
+                <span className="absolute -top-1.5 -right-1.5 size-5 rounded-full bg-ember text-white text-[10px] font-bold grid place-items-center shadow-lg cart-badge-pulse">
                   {count}
                 </span>
               )}
@@ -89,9 +89,9 @@ export default function Header() {
 
         {subtotal < FREE_SHIP_ABOVE && subtotal > 0 && (
           <div className="px-6 pt-4">
-            <p className="text-xs text-mist/60 mb-1.5">Add {inr(FREE_SHIP_ABOVE - subtotal)} more for free delivery</p>
-            <div className="h-1 rounded-full bg-white/10 overflow-hidden">
-              <div className="h-full rounded-full bg-moon transition-all duration-500" style={{ width: `${progress}%` }} />
+            <p className="text-xs text-mist/60 mb-2">Add {inr(FREE_SHIP_ABOVE - subtotal)} more for free delivery</p>
+            <div className="ship-bar-track">
+              <div className="ship-bar-fill" style={{ width: `${progress}%` }} />
             </div>
           </div>
         )}
@@ -110,15 +110,15 @@ export default function Header() {
           {lines.map((l) => {
             const p = byId(l.id)!;
             return (
-              <div key={l.id} className="flex items-center gap-4 rounded-xl bg-white/5 p-3">
+              <div key={l.id} className="cart-item">
                 <div className="flex-1 min-w-0">
                   <p className="font-bold truncate">{p.name}</p>
                   <p className="text-sm text-mist/50">{inr(p.price)} · {p.weight}</p>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  <button className="size-8 rounded-full border border-white/20 hover:bg-white/10 transition-colors grid place-items-center" onClick={() => setQty(l.id, l.qty - 1)} aria-label="Decrease">−</button>
+                  <button className="qty-btn" onClick={() => setQty(l.id, l.qty - 1)} aria-label="Decrease">−</button>
                   <span className="w-5 text-center font-bold">{l.qty}</span>
-                  <button className="size-8 rounded-full border border-white/20 hover:bg-white/10 transition-colors grid place-items-center" onClick={() => setQty(l.id, l.qty + 1)} aria-label="Increase">+</button>
+                  <button className="qty-btn" onClick={() => setQty(l.id, l.qty + 1)} aria-label="Increase">+</button>
                 </div>
               </div>
             );

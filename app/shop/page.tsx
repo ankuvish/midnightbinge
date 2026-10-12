@@ -24,11 +24,7 @@ export default function Shop() {
           <button
             key={c}
             onClick={() => setCat(c)}
-            className={`btn-luxury rounded-full px-5 py-2 text-sm font-semibold border transition-all ${
-              cat === c
-                ? "bg-moon text-ink border-moon"
-                : "border-white/20 text-mist/70 hover:border-moon/40 hover:text-moon"
-            }`}
+            className={`filter-pill btn-luxury ${cat === c ? "active" : ""}`}
           >
             {c}
           </button>

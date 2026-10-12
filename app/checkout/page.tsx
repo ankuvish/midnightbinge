@@ -136,15 +136,15 @@ export default function Checkout() {
           </div>
         </section>
 
-        {err && <p role="alert" className="text-ember text-sm bg-ember/10 border border-ember/30 rounded-xl px-4 py-3">{err}</p>}
+        {err && <p role="alert" className="alert-error">{err}</p>}
 
         <button
           disabled={busy}
           className="btn-luxury w-full rounded-full bg-ember py-4 font-bold text-white text-lg glow-ember disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {busy ? (
-            <span className="flex items-center justify-center gap-2">
-              <span className="size-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+            <span className="flex items-center justify-center gap-2.5">
+              <span className="spinner" />
               Processing…
             </span>
           ) : method === "cod" ? "Place order" : `Pay ${inr(t.total)}`}
