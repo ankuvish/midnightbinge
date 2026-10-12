@@ -81,69 +81,69 @@
    Inspired by high-end jewellery & perfume brands
 ═══════════════════════════════════════════════════════ */
 html.light {
-  /* Deep muted sage-green backgrounds — feels rich, not clinical */
-  --bg:           #F0EDE4;
-  --bg-2:         #E8E3D8;
-  --bg-3:         #DDD7C9;
-  --bg-4:         #D2CBB8;
+  /* Muted warm taupe — sits at ~65% brightness, never burns the eyes */
+  --bg:           #D6D0C4;
+  --bg-2:         #CAC4B6;
+  --bg-3:         #BDB6A7;
+  --bg-4:         #B0A898;
 
-  --surface:      rgba(255,253,247,.92);
-  --surface-2:    rgba(252,249,240,.97);
-  --surface-3:    rgba(180,150,70,.10);
+  --surface:      rgba(222,218,208,.92);
+  --surface-2:    rgba(230,226,216,.96);
+  --surface-3:    rgba(160,140,80,.10);
 
-  /* Borders — warm olive-gold tint */
-  --border:       rgba(130,110,60,.20);
-  --border-soft:  rgba(110,90,40,.12);
-  --border-hover: rgba(150,120,50,.50);
+  /* Borders — olive-tan */
+  --border:       rgba(100,85,50,.22);
+  --border-soft:  rgba(90,75,42,.13);
+  --border-hover: rgba(120,100,55,.50);
 
-  /* Text — near-black with warm undertone */
-  --text:         #1C1710;
-  --text-muted:   rgba(28,23,16,.60);
-  --text-faint:   rgba(28,23,16,.34);
-  --text-dim:     rgba(28,23,16,.44);
+  /* Text — warm dark brown */
+  --text:         #201A10;
+  --text-muted:   rgba(32,26,16,.62);
+  --text-faint:   rgba(32,26,16,.36);
+  --text-dim:     rgba(32,26,16,.46);
 
-  /* Gold — richer, deeper, more jewel-like */
-  --gold:         #7A5508;
-  --gold-2:       #583C06;
-  --gold-3:       #A07010;
-  --gold-4:       #C89018;
+  /* Gold — rich cognac amber */
+  --gold:         #6B4C08;
+  --gold-2:       #4E3606;
+  --gold-3:       #90680E;
+  --gold-4:       #B08018;
 
-  /* Ember — deep bordeaux-red */
-  --ember:        #9E2A0A;
-  --ember-2:      #C44020;
-  --ember-3:      #741C06;
+  /* Ember — deep burnt sienna */
+  --ember:        #8C2508;
+  --ember-2:      #B03A18;
+  --ember-3:      #651806;
 
-  --accent:       #4A1D96;
-  --accent-2:     #3B1278;
-  --rose:         #831535;
+  --accent:       #3D1980;
+  --accent-2:     #2E1060;
+  --rose:         #6E1030;
 
-  /* Blobs — muted sage & champagne, very subtle */
-  --blob-1:       #C8C4A8;
-  --blob-2:       #D8D4B8;
-  --blob-3:       #BFBA9A;
-  --blob-4:       #E0DACC;
+  /* Blobs — muted olive/tan, very subtle */
+  --blob-1:       #A89E88;
+  --blob-2:       #B8AE98;
+  --blob-3:       #988E78;
+  --blob-4:       #C0B8A8;
 
-  --scrollbar:    #A08828;
-  --scrollbar-hover: #7A6018;
+  --scrollbar:    #8A7040;
+  --scrollbar-hover: #6A5230;
 
-  /* Header — warm parchment with a hint of green-grey */
-  --header-bg:    linear-gradient(135deg, rgba(240,237,228,.97) 0%, rgba(232,228,216,.98) 100%);
+  /* Header — darker sage so nav is readable */
+  --header-bg:    linear-gradient(135deg, rgba(200,194,182,.97) 0%, rgba(192,186,172,.98) 100%);
 
-  /* Glass — warm ivory-cream */
-  --glass-bg:     linear-gradient(135deg, rgba(255,253,247,.90) 0%, rgba(250,246,234,.94) 100%);
-  --glass-bg-2:   linear-gradient(160deg, rgba(255,253,247,.88) 0%, rgba(248,244,230,.92) 60%, rgba(240,236,218,.96) 100%);
+  /* Glass — warm taupe tint */
+  --glass-bg:     linear-gradient(135deg, rgba(218,214,204,.90) 0%, rgba(210,204,192,.94) 100%);
+  --glass-bg-2:   linear-gradient(160deg, rgba(220,216,206,.88) 0%, rgba(208,202,190,.92) 60%, rgba(198,192,180,.96) 100%);
 
-  --input-bg:     rgba(255,253,247,.97);
-  --input-border: rgba(130,110,60,.20);
+  --input-bg:     rgba(224,220,210,.97);
+  --input-border: rgba(100,85,50,.22);
 
-  --card-top:     rgba(150,120,50,.09);
-  --card-glow:    rgba(130,110,60,.04);
+  --card-top:     rgba(110,90,40,.09);
+  --card-glow:    rgba(100,85,50,.05);
 
-  --shadow-sm:    0 2px 12px rgba(60,40,10,.10);
-  --shadow-md:    0 8px 32px rgba(60,40,10,.14);
-  --shadow-lg:    0 20px 60px rgba(60,40,10,.16);
-  --shadow-gold:  0 0 40px rgba(130,110,60,.13);
-  --shadow-ember: 0 0 40px rgba(158,42,10,.14);
+  --shadow-sm:    0 2px 12px rgba(40,30,10,.14);
+  --shadow-md:    0 8px 32px rgba(40,30,10,.18);
+  --shadow-lg:    0 20px 60px rgba(40,30,10,.20);
+  --shadow-gold:  0 0 40px rgba(107,76,8,.16);
+  --shadow-ember: 0 0 40px rgba(140,37,8,.17);
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -931,29 +931,29 @@ html.light .text-mist\/50,
 html.light .text-mist\/55,
 html.light .text-mist\/60,
 html.light .text-mist\/70,
-html.light .text-mist\/80 { color: rgba(28,23,16,.65) !important; }
+html.light .text-mist\/80 { color: rgba(32,26,16,.65) !important; }
 
 html.light .text-mist\/30,
-html.light .text-mist\/40 { color: rgba(28,23,16,.40) !important; }
+html.light .text-mist\/40 { color: rgba(32,26,16,.42) !important; }
 
-html.light .text-mist { color: #1C1710 !important; }
-html.light .text-moon  { color: #5C3E08 !important; }
-html.light .hover\:text-moon:hover { color: #5C3E08 !important; }
-html.light .text-ember { color: #7E2008 !important; }
+html.light .text-mist { color: #201A10 !important; }
+html.light .text-moon  { color: #4E3606 !important; }
+html.light .hover\:text-moon:hover { color: #4E3606 !important; }
+html.light .text-ember { color: #6E1C06 !important; }
 
 html.light .border-white\/5,
 html.light .border-white\/8,
-html.light .border-white\/10 { border-color: rgba(100,80,30,.13) !important; }
+html.light .border-white\/10 { border-color: rgba(90,70,30,.14) !important; }
 
-html.light .bg-white\/5  { background: rgba(100,80,30,.05) !important; }
-html.light .bg-white\/10 { background: rgba(100,80,30,.09) !important; }
+html.light .bg-white\/5  { background: rgba(90,70,30,.06) !important; }
+html.light .bg-white\/10 { background: rgba(90,70,30,.10) !important; }
 
-html.light .fill-mist\/60 { fill: rgba(28,23,16,.52) !important; }
-html.light .hover\:fill-moon:hover { fill: #5C3E08 !important; }
+html.light .fill-mist\/60 { fill: rgba(32,26,16,.52) !important; }
+html.light .hover\:fill-moon:hover { fill: #4E3606 !important; }
 
-html.light footer p { color: rgba(28,23,16,.45); }
-html.light footer a { color: rgba(28,23,16,.60); }
-html.light footer a:hover { color: #5C3E08; }
+html.light footer p { color: rgba(32,26,16,.45); }
+html.light footer a { color: rgba(32,26,16,.60); }
+html.light footer a:hover { color: #4E3606; }
 
 /* ═══════════════════════════════════════════════════════
    HERO SECTION EXTRAS

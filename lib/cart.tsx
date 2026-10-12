@@ -7,7 +7,26 @@ const C = createContext<Ctx>(null as unknown as Ctx);
 export const useCart = () => useContext(C);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [lines, setLines] = useState<Line[]>([]); const [open, setOpen] = useState(false);
-  useEffect(() => { try { setLines(JSON.parse(localStorage.getItem("mb-cart") || "[]")); } catch {} }, []);
+  useEffect(() => {
+    try {
+      const raw = JSON.parse(localStorage.getItem("mb-cart") || "[]");
+      // Validate schema — each line must have a string id and positive integer qty
+      if (Array.isArray(raw)) {
+        const valid = raw.filter(
+          (l: unknown) =>
+            l !== null &&
+            typeof l === "object" &&
+            typeof (l as any).id === "string" &&
+            Number.isInteger((l as any).qty) &&
+            (l as any).qty > 0
+        );
+        setLines(valid);
+      }
+    } catch {
+      // Corrupted localStorage — start fresh
+      localStorage.removeItem("mb-cart");
+    }
+  }, []);
   useEffect(() => { localStorage.setItem("mb-cart", JSON.stringify(lines)); }, [lines]);
   const v = useMemo<Ctx>(() => ({
     lines, open, setOpen,
