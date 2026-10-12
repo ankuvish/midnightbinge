@@ -77,51 +77,73 @@
 
 /* ═══════════════════════════════════════════════════════
    LIGHT MODE TOKENS
-   Warm ivory + champagne gold + deep sienna
+   Luxury: deep forest green base + warm champagne gold
+   Inspired by high-end jewellery & perfume brands
 ═══════════════════════════════════════════════════════ */
 html.light {
-  --bg:           #FAF6ED;
-  --bg-2:         #F4EDD8;
-  --bg-3:         #EDE3C5;
-  --bg-4:         #E6D8B5;
-  --surface:      rgba(255,252,242,.90);
-  --surface-2:    rgba(250,245,228,.96);
-  --surface-3:    rgba(232,201,122,.12);
-  --border:       rgba(160,110,40,.18);
-  --border-soft:  rgba(130,90,30,.10);
-  --border-hover: rgba(160,110,40,.45);
-  --text:         #180E04;
-  --text-muted:   rgba(24,14,4,.58);
-  --text-faint:   rgba(24,14,4,.32);
-  --text-dim:     rgba(24,14,4,.42);
-  --gold:         #8A5A08;
-  --gold-2:       #644008;
-  --gold-3:       #B07810;
-  --gold-4:       #D09820;
-  --ember:        #B83008;
-  --ember-2:      #D85020;
-  --ember-3:      #8A2005;
-  --accent:       #5B21B6;
-  --accent-2:     #4C1D95;
-  --rose:         #9D1B45;
-  --blob-1:       #F5DFA0;
-  --blob-2:       #FDE8C0;
-  --blob-3:       #E8D090;
-  --blob-4:       #F0E4C5;
-  --scrollbar:    #C4900A;
-  --scrollbar-hover: #A07008;
-  --header-bg:    linear-gradient(135deg, rgba(250,246,237,.97) 0%, rgba(244,237,216,.98) 100%);
-  --glass-bg:     linear-gradient(135deg, rgba(255,252,242,.88) 0%, rgba(250,244,224,.92) 100%);
-  --glass-bg-2:   linear-gradient(160deg, rgba(255,252,242,.85) 0%, rgba(248,240,218,.90) 60%, rgba(242,232,208,.95) 100%);
-  --input-bg:     rgba(255,252,242,.96);
-  --input-border: rgba(160,110,40,.22);
-  --card-top:     rgba(160,110,40,.10);
-  --card-glow:    rgba(160,110,40,.05);
-  --shadow-sm:    0 2px 12px rgba(80,40,0,.12);
-  --shadow-md:    0 8px 32px rgba(80,40,0,.16);
-  --shadow-lg:    0 20px 60px rgba(80,40,0,.18);
-  --shadow-gold:  0 0 40px rgba(160,110,40,.14);
-  --shadow-ember: 0 0 40px rgba(184,48,8,.16);
+  /* Deep muted sage-green backgrounds — feels rich, not clinical */
+  --bg:           #F0EDE4;
+  --bg-2:         #E8E3D8;
+  --bg-3:         #DDD7C9;
+  --bg-4:         #D2CBB8;
+
+  --surface:      rgba(255,253,247,.92);
+  --surface-2:    rgba(252,249,240,.97);
+  --surface-3:    rgba(180,150,70,.10);
+
+  /* Borders — warm olive-gold tint */
+  --border:       rgba(130,110,60,.20);
+  --border-soft:  rgba(110,90,40,.12);
+  --border-hover: rgba(150,120,50,.50);
+
+  /* Text — near-black with warm undertone */
+  --text:         #1C1710;
+  --text-muted:   rgba(28,23,16,.60);
+  --text-faint:   rgba(28,23,16,.34);
+  --text-dim:     rgba(28,23,16,.44);
+
+  /* Gold — richer, deeper, more jewel-like */
+  --gold:         #7A5508;
+  --gold-2:       #583C06;
+  --gold-3:       #A07010;
+  --gold-4:       #C89018;
+
+  /* Ember — deep bordeaux-red */
+  --ember:        #9E2A0A;
+  --ember-2:      #C44020;
+  --ember-3:      #741C06;
+
+  --accent:       #4A1D96;
+  --accent-2:     #3B1278;
+  --rose:         #831535;
+
+  /* Blobs — muted sage & champagne, very subtle */
+  --blob-1:       #C8C4A8;
+  --blob-2:       #D8D4B8;
+  --blob-3:       #BFBA9A;
+  --blob-4:       #E0DACC;
+
+  --scrollbar:    #A08828;
+  --scrollbar-hover: #7A6018;
+
+  /* Header — warm parchment with a hint of green-grey */
+  --header-bg:    linear-gradient(135deg, rgba(240,237,228,.97) 0%, rgba(232,228,216,.98) 100%);
+
+  /* Glass — warm ivory-cream */
+  --glass-bg:     linear-gradient(135deg, rgba(255,253,247,.90) 0%, rgba(250,246,234,.94) 100%);
+  --glass-bg-2:   linear-gradient(160deg, rgba(255,253,247,.88) 0%, rgba(248,244,230,.92) 60%, rgba(240,236,218,.96) 100%);
+
+  --input-bg:     rgba(255,253,247,.97);
+  --input-border: rgba(130,110,60,.20);
+
+  --card-top:     rgba(150,120,50,.09);
+  --card-glow:    rgba(130,110,60,.04);
+
+  --shadow-sm:    0 2px 12px rgba(60,40,10,.10);
+  --shadow-md:    0 8px 32px rgba(60,40,10,.14);
+  --shadow-lg:    0 20px 60px rgba(60,40,10,.16);
+  --shadow-gold:  0 0 40px rgba(130,110,60,.13);
+  --shadow-ember: 0 0 40px rgba(158,42,10,.14);
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -220,8 +242,8 @@ html.light ::selection { background: rgba(160,110,40,.20); }
 ═══════════════════════════════════════════════════════ */
 .glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(28px) saturate(1.3);
-  -webkit-backdrop-filter: blur(28px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
   border: 1px solid var(--border);
   border-top-color: var(--card-top);
   transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
@@ -229,8 +251,8 @@ html.light ::selection { background: rgba(160,110,40,.20); }
 
 .glass-2 {
   background: var(--glass-bg-2);
-  backdrop-filter: blur(20px) saturate(1.2);
-  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-soft);
   transition: background .2s ease, border-color .2s ease;
 }
@@ -411,8 +433,8 @@ html.light .header-shimmer-line { opacity: .35; }
   color: var(--text);
   border: 1px solid var(--border);
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transition: border-color .18s, box-shadow .18s, color .18s, background .18s;
 }
 .cart-btn:hover {
@@ -909,29 +931,29 @@ html.light .text-mist\/50,
 html.light .text-mist\/55,
 html.light .text-mist\/60,
 html.light .text-mist\/70,
-html.light .text-mist\/80 { color: rgba(24,14,4,.68) !important; }
+html.light .text-mist\/80 { color: rgba(28,23,16,.65) !important; }
 
 html.light .text-mist\/30,
-html.light .text-mist\/40 { color: rgba(24,14,4,.42) !important; }
+html.light .text-mist\/40 { color: rgba(28,23,16,.40) !important; }
 
-html.light .text-mist { color: #180E04 !important; }
-html.light .text-moon  { color: #6A4A06 !important; }
-html.light .hover\:text-moon:hover { color: #6A4A06 !important; }
-html.light .text-ember { color: #A02806 !important; }
+html.light .text-mist { color: #1C1710 !important; }
+html.light .text-moon  { color: #5C3E08 !important; }
+html.light .hover\:text-moon:hover { color: #5C3E08 !important; }
+html.light .text-ember { color: #7E2008 !important; }
 
 html.light .border-white\/5,
 html.light .border-white\/8,
-html.light .border-white\/10 { border-color: rgba(120,80,20,.13) !important; }
+html.light .border-white\/10 { border-color: rgba(100,80,30,.13) !important; }
 
-html.light .bg-white\/5  { background: rgba(120,80,20,.05) !important; }
-html.light .bg-white\/10 { background: rgba(120,80,20,.09) !important; }
+html.light .bg-white\/5  { background: rgba(100,80,30,.05) !important; }
+html.light .bg-white\/10 { background: rgba(100,80,30,.09) !important; }
 
-html.light .fill-mist\/60 { fill: rgba(24,14,4,.52) !important; }
-html.light .hover\:fill-moon:hover { fill: #6A4A06 !important; }
+html.light .fill-mist\/60 { fill: rgba(28,23,16,.52) !important; }
+html.light .hover\:fill-moon:hover { fill: #5C3E08 !important; }
 
-html.light footer p { color: rgba(24,14,4,.48); }
-html.light footer a { color: rgba(24,14,4,.62); }
-html.light footer a:hover { color: #6A4A06; }
+html.light footer p { color: rgba(28,23,16,.45); }
+html.light footer a { color: rgba(28,23,16,.60); }
+html.light footer a:hover { color: #5C3E08; }
 
 /* ═══════════════════════════════════════════════════════
    HERO SECTION EXTRAS
@@ -1062,4 +1084,34 @@ html.light .footer-social-btn:hover {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* ═══════════════════════════════════════════════════════
+   PERFORMANCE UTILITIES
+═══════════════════════════════════════════════════════ */
+
+/* Promote animating elements to their own GPU layer */
+.blob,
+.star-twinkle,
+.sun-shimmer,
+.marquee,
+.hero-mesh {
+  will-change: transform, opacity;
+}
+
+/* Contain layout for off-screen sections */
+.content-below-fold {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}
+
+/* Prevent layout thrash on card hover */
+.product-card {
+  contain: layout style;
+}
+
+/* Reduce paint area for blobs — don't let them trigger full-page repaints */
+.blob {
+  isolation: isolate;
+  contain: strict;
 }

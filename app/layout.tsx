@@ -25,11 +25,9 @@ export default function Root({ children }: { children: React.ReactNode }) {
       </head>
       <body className="font-body min-h-screen">
 
-        {/* Ambient background blobs */}
-        <div className="blob w-[700px] h-[700px] top-[-250px] left-[-200px] opacity-60" style={{ background: "var(--blob-1)" }} />
-        <div className="blob w-[600px] h-[600px] top-[25%] right-[-150px] opacity-50" style={{ background: "var(--blob-2)" }} />
-        <div className="blob w-[500px] h-[500px] bottom-[5%] left-[10%] opacity-40" style={{ background: "var(--blob-3)" }} />
-        <div className="blob w-[400px] h-[400px] top-[60%] right-[20%] opacity-30" style={{ background: "var(--blob-4)" }} />
+        {/* Ambient blobs — only 2, smaller blur, GPU-composited */}
+        <div className="blob w-[600px] h-[600px] top-[-200px] left-[-150px] opacity-50" style={{ background: "var(--blob-1)", filter: "blur(90px)" }} />
+        <div className="blob w-[500px] h-[500px] top-[30%] right-[-120px] opacity-35" style={{ background: "var(--blob-2)", filter: "blur(90px)" }} />
 
         {/* Full-page background decorations — stars (dark) / suns (light) */}
         <BackgroundDecorations />
